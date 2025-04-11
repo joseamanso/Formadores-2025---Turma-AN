@@ -22,13 +22,20 @@
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
-            
-            
-            <div id="acessibilidade" class="menu-acessibilidade">
-                
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold"> A++</button>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold"> A--</button>
 
+
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold">Acessibilidade</button>
+                <div id="submenu-acessibilidade" class="submenu-acessibilidade">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A++</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A--</button>
+                    <button id="contraste" class="btn btn-primary fw-bold">Contraste</button>
+                    <div id="seletor-contraste" class="seletor-contraste">
+                        <label for="cor-contraste">Escolha a cor:</label>
+                        <input type="color" id="cor-contraste" value="#000000">
+                        <button id="aplicar-contraste" class="btn btn-sm btn-secondary mt-2">Aplicar</button>
+                    </div>
+                </div>
             </div>
 
 
@@ -89,7 +96,7 @@
 
         <section id="contato">
             <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
                     <h2 class="mb-3">Entre em contato</h2>
                     <form>
                         <div class="form-group mb-3">
